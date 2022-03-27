@@ -1,0 +1,100 @@
+R-square,MAE,RSME,MedAE,Model,Num_Features,Preprocessing,Fea_Selection,Dim_Reduction,Var_Threshold
+0.846,39.652,218.309,7.759,"RandomForestRegressor(n_estimators=500, n_jobs=-1, random_state=27033074)",472,,,0,False
+0.841,39.791,222.001,7.727,"RandomForestRegressor(n_estimators=500, n_jobs=-1, random_state=27033074)",472,StandardScaler(),,0,False
+0.84,39.867,222.937,7.855,"RandomForestRegressor(n_estimators=500, n_jobs=-1, random_state=27033074)",472,MinMaxScaler(),,0,False
+0.84,39.864,222.937,7.863,"RandomForestRegressor(n_estimators=500, n_jobs=-1, random_state=27033074)",472,MaxAbsScaler(),,0,False
+0.844,39.715,219.816,7.709,"RandomForestRegressor(n_estimators=500, n_jobs=-1, random_state=27033074)",472,RobustScaler(),,0,False
+0.839,40.171,223.314,7.781,"RandomForestRegressor(n_estimators=500, n_jobs=-1, random_state=27033074)",472,PowerTransformer(),,0,False
+0.843,40.095,220.924,7.843,"RandomForestRegressor(n_estimators=500, n_jobs=-1, random_state=27033074)",472,QuantileTransformer(random_state=27033074),,0,False
+0.811,40.28,242.241,7.742,"RandomForestRegressor(n_estimators=500, n_jobs=-1, random_state=27033074)",472,"QuantileTransformer(output_distribution='normal', random_state=27033074)",,0,False
+0.482,111.353,400.931,30.556,"RandomForestRegressor(n_estimators=500, n_jobs=-1, random_state=27033074)",472,normalize,,0,False
+-162.523,1440.851,7120.561,202.649,"MLPRegressor(max_iter=10000, random_state=27033074)",472,,,0,False
+0.54,70.016,377.667,26.213,"MLPRegressor(max_iter=10000, random_state=27033074)",472,StandardScaler(),,0,False
+0.713,68.485,298.072,24.853,"MLPRegressor(max_iter=10000, random_state=27033074)",472,MinMaxScaler(),,0,False
+0.714,68.513,297.873,24.893,"MLPRegressor(max_iter=10000, random_state=27033074)",472,MaxAbsScaler(),,0,False
+0.544,60.729,376.011,17.29,"MLPRegressor(max_iter=10000, random_state=27033074)",472,RobustScaler(),,0,False
+0.471,110.753,404.845,55.789,"MLPRegressor(max_iter=10000, random_state=27033074)",472,PowerTransformer(),,0,False
+0.257,105.053,479.853,38.719,"MLPRegressor(max_iter=10000, random_state=27033074)",472,QuantileTransformer(random_state=27033074),,0,False
+0.695,62.77,307.43,21.461,"MLPRegressor(max_iter=10000, random_state=27033074)",472,"QuantileTransformer(output_distribution='normal', random_state=27033074)",,0,False
+0.544,118.863,376.206,46.797,"MLPRegressor(max_iter=10000, random_state=27033074)",472,normalize,,0,False
+-0.023,93.475,563.155,12.912,SVR(gamma='auto'),472,,,0,False
+0.01,86.921,554.053,10.853,SVR(gamma='auto'),472,StandardScaler(),,0,False
+-0.021,92.997,562.644,12.442,SVR(gamma='auto'),472,MinMaxScaler(),,0,False
+-0.021,92.997,562.644,12.442,SVR(gamma='auto'),472,MaxAbsScaler(),,0,False
+-0.006,83.347,558.554,10.113,SVR(gamma='auto'),472,RobustScaler(),,0,False
+0.007,83.944,554.889,9.745,SVR(gamma='auto'),472,PowerTransformer(),,0,False
+-0.008,87.256,559.108,9.565,SVR(gamma='auto'),472,QuantileTransformer(random_state=27033074),,0,False
+-0.007,89.246,558.78,10.577,SVR(gamma='auto'),472,"QuantileTransformer(output_distribution='normal', random_state=27033074)",,0,False
+-0.023,93.469,563.139,12.898,SVR(gamma='auto'),472,normalize,,0,False
+0.031,118,548.264,30.4,"KNeighborsRegressor(n_jobs=-1, n_neighbors=10)",472,,,0,False
+0.562,77.589,368.598,24.7,"KNeighborsRegressor(n_jobs=-1, n_neighbors=10)",472,StandardScaler(),,0,False
+0.343,106.068,451.24,36,"KNeighborsRegressor(n_jobs=-1, n_neighbors=10)",472,MinMaxScaler(),,0,False
+0.343,106.093,451.248,36,"KNeighborsRegressor(n_jobs=-1, n_neighbors=10)",472,MaxAbsScaler(),,0,False
+0.561,63.422,369.059,16.7,"KNeighborsRegressor(n_jobs=-1, n_neighbors=10)",472,RobustScaler(),,0,False
+0.115,105.257,523.815,25.5,"KNeighborsRegressor(n_jobs=-1, n_neighbors=10)",472,PowerTransformer(),,0,False
+0.067,121.101,537.86,28.85,"KNeighborsRegressor(n_jobs=-1, n_neighbors=10)",472,QuantileTransformer(random_state=27033074),,0,False
+0.059,121.236,540.11,33.6,"KNeighborsRegressor(n_jobs=-1, n_neighbors=10)",472,"QuantileTransformer(output_distribution='normal', random_state=27033074)",,0,False
+0.62,80.642,343.088,25.55,"KNeighborsRegressor(n_jobs=-1, n_neighbors=10)",472,normalize,,0,False
+-7948165641.308,8830946.768,49643015.795,1057572.14,"SGDRegressor(loss='huber', max_iter=10000, random_state=27033074)",472,,,0,False
+0.389,67.354,435.427,9.274,"SGDRegressor(loss='huber', max_iter=10000, random_state=27033074)",472,StandardScaler(),,0,False
+-0.022,93.351,562.833,12.804,"SGDRegressor(loss='huber', max_iter=10000, random_state=27033074)",472,MinMaxScaler(),,0,False
+-0.022,93.351,562.832,12.804,"SGDRegressor(loss='huber', max_iter=10000, random_state=27033074)",472,MaxAbsScaler(),,0,False
+0.763,46.075,270.911,8.323,"SGDRegressor(loss='huber', max_iter=10000, random_state=27033074)",472,RobustScaler(),,0,False
+0.012,82.78,553.531,11.527,"SGDRegressor(loss='huber', max_iter=10000, random_state=27033074)",472,PowerTransformer(),,0,False
+-0.004,86.114,558.024,10.265,"SGDRegressor(loss='huber', max_iter=10000, random_state=27033074)",472,QuantileTransformer(random_state=27033074),,0,False
+0.012,85.892,553.527,14.064,"SGDRegressor(loss='huber', max_iter=10000, random_state=27033074)",472,"QuantileTransformer(output_distribution='normal', random_state=27033074)",,0,False
+-0.024,93.613,563.526,11.376,"SGDRegressor(loss='huber', max_iter=10000, random_state=27033074)",472,normalize,,0,False
+-3.445563970802251e+35,5.4691164723426755e+19,3.268547953157971e+20,5.009165759635717e+18,"SGDRegressor(max_iter=10000, random_state=27033074)",472,,,0,False
+-8.182234380887702e+17,88021823053.086,503686904952.284,41838359265.946,"SGDRegressor(max_iter=10000, random_state=27033074)",472,StandardScaler(),,0,False
+0.762,62.176,271.438,26.227,"SGDRegressor(max_iter=10000, random_state=27033074)",472,MinMaxScaler(),,0,False
+0.762,62.175,271.443,26.229,"SGDRegressor(max_iter=10000, random_state=27033074)",472,MaxAbsScaler(),,0,False
+-1.3437796568005446e+23,18716136181750.758,204121491594511.03,2793307268787.717,"SGDRegressor(max_iter=10000, random_state=27033074)",472,RobustScaler(),,0,False
+-7325904191921497.0,20289573283.817,47660140633.318,13629112470.299,"SGDRegressor(max_iter=10000, random_state=27033074)",472,PowerTransformer(),,0,False
+0.086,140.339,532.438,88.769,"SGDRegressor(max_iter=10000, random_state=27033074)",472,QuantileTransformer(random_state=27033074),,0,False
+-8054974722.003,32656620.747,49975459.177,25194402.928,"SGDRegressor(max_iter=10000, random_state=27033074)",472,"QuantileTransformer(output_distribution='normal', random_state=27033074)",,0,False
+0.699,87.988,305.621,44.502,"SGDRegressor(max_iter=10000, random_state=27033074)",472,normalize,,0,False
+-113593565151.181,41430561.612,187672900.996,6256390.328,"SGDRegressor(loss='epsilon_insensitive', max_iter=10000, random_state=27033074)",472,,,0,False
+0.769,43.461,267.644,8.537,"SGDRegressor(loss='epsilon_insensitive', max_iter=10000, random_state=27033074)",472,StandardScaler(),,0,False
+-0.016,92.384,561.167,12.748,"SGDRegressor(loss='epsilon_insensitive', max_iter=10000, random_state=27033074)",472,MinMaxScaler(),,0,False
+-0.016,92.384,561.166,12.748,"SGDRegressor(loss='epsilon_insensitive', max_iter=10000, random_state=27033074)",472,MaxAbsScaler(),,0,False
+0.375,73.6,440.057,13.457,"SGDRegressor(loss='epsilon_insensitive', max_iter=10000, random_state=27033074)",472,RobustScaler(),,0,False
+0.02,82.485,551.177,14.029,"SGDRegressor(loss='epsilon_insensitive', max_iter=10000, random_state=27033074)",472,PowerTransformer(),,0,False
+0.009,83.52,554.456,12.628,"SGDRegressor(loss='epsilon_insensitive', max_iter=10000, random_state=27033074)",472,QuantileTransformer(random_state=27033074),,0,False
+0.019,85.992,551.526,15.988,"SGDRegressor(loss='epsilon_insensitive', max_iter=10000, random_state=27033074)",472,"QuantileTransformer(output_distribution='normal', random_state=27033074)",,0,False
+-0.023,93.454,563.107,12.95,"SGDRegressor(loss='epsilon_insensitive', max_iter=10000, random_state=27033074)",472,normalize,,0,False
+-1.0467619956815385e+38,1.1830291162123933e+21,5.697032217172802e+21,1.582236392757692e+20,"SGDRegressor(loss='squared_epsilon_insensitive', max_iter=10000,
+             random_state=27033074)",472,,,0,False
+-1.0094194698780238e+18,72199266917.305,559449050104.891,28759585958.355,"SGDRegressor(loss='squared_epsilon_insensitive', max_iter=10000,
+             random_state=27033074)",472,StandardScaler(),,0,False
+0.736,61.391,286.089,22.237,"SGDRegressor(loss='squared_epsilon_insensitive', max_iter=10000,
+             random_state=27033074)",472,MinMaxScaler(),,0,False
+0.736,61.389,286.092,22.234,"SGDRegressor(loss='squared_epsilon_insensitive', max_iter=10000,
+             random_state=27033074)",472,MaxAbsScaler(),,0,False
+-8.618527091929332e+22,15746323838485.906,163471191368686.28,2541233917943.722,"SGDRegressor(loss='squared_epsilon_insensitive', max_iter=10000,
+             random_state=27033074)",472,RobustScaler(),,0,False
+-3454707209331528.0,7556445660.627,32728818320.404,4383490246.266,"SGDRegressor(loss='squared_epsilon_insensitive', max_iter=10000,
+             random_state=27033074)",472,PowerTransformer(),,0,False
+0.08,141.132,533.984,88.657,"SGDRegressor(loss='squared_epsilon_insensitive', max_iter=10000,
+             random_state=27033074)",472,QuantileTransformer(random_state=27033074),,0,False
+-779175149919.02,362650497.685,491521193.755,290500119.297,"SGDRegressor(loss='squared_epsilon_insensitive', max_iter=10000,
+             random_state=27033074)",472,"QuantileTransformer(output_distribution='normal', random_state=27033074)",,0,False
+0.771,78.662,266.656,34.833,"SGDRegressor(loss='squared_epsilon_insensitive', max_iter=10000,
+             random_state=27033074)",472,normalize,,0,False
+0.733,56.001,287.879,10.0,DecisionTreeRegressor(random_state=27033074),472,,,0,False
+0.668,56.642,320.877,10.0,DecisionTreeRegressor(random_state=27033074),472,StandardScaler(),,0,False
+0.749,54.759,279.039,10.0,DecisionTreeRegressor(random_state=27033074),472,MinMaxScaler(),,0,False
+0.749,54.764,279.041,10.0,DecisionTreeRegressor(random_state=27033074),472,MaxAbsScaler(),,0,False
+0.298,60.846,466.582,10.0,DecisionTreeRegressor(random_state=27033074),472,RobustScaler(),,0,False
+0.749,55.968,279.112,10.0,DecisionTreeRegressor(random_state=27033074),472,PowerTransformer(),,0,False
+0.713,56.388,298.276,10.0,DecisionTreeRegressor(random_state=27033074),472,QuantileTransformer(random_state=27033074),,0,False
+0.691,56.149,309.527,10.0,DecisionTreeRegressor(random_state=27033074),472,"QuantileTransformer(output_distribution='normal', random_state=27033074)",,0,False
+0.276,121.743,473.849,20.0,DecisionTreeRegressor(random_state=27033074),472,normalize,,0,False
+-5.046,368.994,1369.166,213.721,"RidgeCV(alphas=array([ 0.1,  1. , 10. ]))",472,,,0,False
+0.335,80.403,454.172,25.578,"RidgeCV(alphas=array([ 0.1,  1. , 10. ]))",472,StandardScaler(),,0,False
+0.56,65.461,369.405,22.736,"RidgeCV(alphas=array([ 0.1,  1. , 10. ]))",472,MinMaxScaler(),,0,False
+0.56,65.46,369.41,22.737,"RidgeCV(alphas=array([ 0.1,  1. , 10. ]))",472,MaxAbsScaler(),,0,False
+0.279,85.382,472.674,26.528,"RidgeCV(alphas=array([ 0.1,  1. , 10. ]))",472,RobustScaler(),,0,False
+0.128,160.615,520.017,106.166,"RidgeCV(alphas=array([ 0.1,  1. , 10. ]))",472,PowerTransformer(),,0,False
+0.094,151.161,530.155,97.331,"RidgeCV(alphas=array([ 0.1,  1. , 10. ]))",472,QuantileTransformer(random_state=27033074),,0,False
+0.123,162.755,521.585,106.747,"RidgeCV(alphas=array([ 0.1,  1. , 10. ]))",472,"QuantileTransformer(output_distribution='normal', random_state=27033074)",,0,False
+0.592,95.453,355.544,34.142,"RidgeCV(alphas=array([ 0.1,  1. , 10. ]))",472,normalize,,0,False

@@ -1,0 +1,31 @@
+Accuracy,F1-Score,Precision,Recall,Model,Num_Features,Preprocessing,Fea_Selection,Dim_Reduction,Var_Threshold
+0.78,0.56,0.636,0.5,"RandomForestClassifier(n_estimators=500, n_jobs=-1, random_state=27033074)",388,PowerTransformer(),,0,True
+0.76,0.538,0.583,0.5,"RandomForestClassifier(n_estimators=500, n_jobs=-1, random_state=27033074)",100,PowerTransformer(),kb,0,True
+0.74,0.435,0.556,0.357,"RandomForestClassifier(n_estimators=500, n_jobs=-1, random_state=27033074)",50,PowerTransformer(),kb,0,True
+0.84,0.667,0.8,0.571,"MLPClassifier(max_iter=10000, random_state=27033074)",388,RobustScaler(),,0,True
+0.74,0.48,0.545,0.429,"MLPClassifier(max_iter=10000, random_state=27033074)",100,RobustScaler(),kb,0,True
+0.78,0.56,0.636,0.5,"MLPClassifier(max_iter=10000, random_state=27033074)",50,RobustScaler(),kb,0,True
+0.78,0.522,0.667,0.429,"SVC(gamma='auto', random_state=27033074)",388,PowerTransformer(),,0,True
+0.8,0.583,0.7,0.5,"SVC(gamma='auto', random_state=27033074)",100,PowerTransformer(),kb,0,True
+0.76,0.5,0.6,0.429,"SVC(gamma='auto', random_state=27033074)",50,PowerTransformer(),kb,0,True
+0.78,0.522,0.667,0.429,"KNeighborsClassifier(n_jobs=-1, n_neighbors=10)",388,QuantileTransformer(random_state=27033074),,0,True
+0.76,0.538,0.583,0.5,"KNeighborsClassifier(n_jobs=-1, n_neighbors=10)",100,QuantileTransformer(random_state=27033074),kb,0,True
+0.72,0.462,0.5,0.429,"KNeighborsClassifier(n_jobs=-1, n_neighbors=10)",50,QuantileTransformer(random_state=27033074),kb,0,True
+0.68,0.556,0.455,0.714,"SGDClassifier(loss='huber', n_jobs=-1, random_state=27033074)",388,normalize,,0,False
+0.8,0.583,0.7,0.5,"SGDClassifier(loss='huber', n_jobs=-1, random_state=27033074)",100,normalize,kb,0,False
+0.76,0.6,0.562,0.643,"SGDClassifier(loss='huber', n_jobs=-1, random_state=27033074)",50,normalize,kb,0,False
+0.76,0.625,0.556,0.714,"SGDClassifier(loss='log', n_jobs=-1, random_state=27033074)",388,normalize,,0,False
+0.62,0.537,0.407,0.786,"SGDClassifier(loss='log', n_jobs=-1, random_state=27033074)",100,normalize,kb,0,False
+0.66,0.564,0.44,0.786,"SGDClassifier(loss='log', n_jobs=-1, random_state=27033074)",50,normalize,kb,0,False
+0.84,0.667,0.8,0.571,"SGDClassifier(loss='perceptron', n_jobs=-1, random_state=27033074)",388,QuantileTransformer(random_state=27033074),,0,False
+0.78,0.56,0.636,0.5,"SGDClassifier(loss='perceptron', n_jobs=-1, random_state=27033074)",100,QuantileTransformer(random_state=27033074),kb,0,False
+0.7,0.545,0.474,0.643,"SGDClassifier(loss='perceptron', n_jobs=-1, random_state=27033074)",50,QuantileTransformer(random_state=27033074),kb,0,False
+0.8,0.667,0.625,0.714,"SGDClassifier(n_jobs=-1, random_state=27033074)",388,PowerTransformer(),,0,True
+0.78,0.476,0.714,0.357,"SGDClassifier(n_jobs=-1, random_state=27033074)",100,PowerTransformer(),kb,0,True
+0.76,0.455,0.625,0.357,"SGDClassifier(n_jobs=-1, random_state=27033074)",50,PowerTransformer(),kb,0,True
+0.8,0.545,0.75,0.429,DecisionTreeClassifier(random_state=27033074),388,QuantileTransformer(random_state=27033074),,0,True
+0.74,0.552,0.533,0.571,DecisionTreeClassifier(random_state=27033074),100,QuantileTransformer(random_state=27033074),kb,0,True
+0.72,0.5,0.5,0.5,DecisionTreeClassifier(random_state=27033074),50,QuantileTransformer(random_state=27033074),kb,0,True
+0.84,0.667,0.8,0.571,"RidgeClassifierCV(alphas=array([ 0.1,  1. , 10. ]))",388,QuantileTransformer(random_state=27033074),,0,False
+0.78,0.522,0.667,0.429,"RidgeClassifierCV(alphas=array([ 0.1,  1. , 10. ]))",100,QuantileTransformer(random_state=27033074),kb,0,False
+0.74,0.435,0.556,0.357,"RidgeClassifierCV(alphas=array([ 0.1,  1. , 10. ]))",50,QuantileTransformer(random_state=27033074),kb,0,False

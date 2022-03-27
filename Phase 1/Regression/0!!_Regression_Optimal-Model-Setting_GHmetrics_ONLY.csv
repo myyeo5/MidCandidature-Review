@@ -1,0 +1,58 @@
+R-square,MAE,RSME,MedAE,Model,Num_Features,Preprocessing,Fea_Selection,Dim_Reduction,Var_Threshold
+0.708,41.728,407.161,7.73,"RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='auto', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=500, n_jobs=-1, oob_score=False,
+                      random_state=27033074, verbose=0, warm_start=False)",14,"QuantileTransformer(copy=True, ignore_implicit_zeros=False, n_quantiles=1000,
+                    output_distribution='uniform', random_state=27033074,
+                    subsample=100000)",,0,False
+0.608,59.8,471.471,23.218,"MLPRegressor(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+             beta_2=0.999, early_stopping=False, epsilon=1e-08,
+             hidden_layer_sizes=(100,), learning_rate='constant',
+             learning_rate_init=0.001, max_fun=15000, max_iter=10000,
+             momentum=0.9, n_iter_no_change=10, nesterovs_momentum=True,
+             power_t=0.5, random_state=27033074, shuffle=True, solver='adam',
+             tol=0.0001, validation_fraction=0.1, verbose=False,
+             warm_start=False)",14,"QuantileTransformer(copy=True, ignore_implicit_zeros=False, n_quantiles=1000,
+                    output_distribution='normal', random_state=27033074,
+                    subsample=100000)",,0,False
+0.028,76.769,742.346,8.446,"SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+    kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",14,"StandardScaler(copy=True, with_mean=True, with_std=True)",,0,False
+0.552,80.255,503.787,15.3,"KNeighborsRegressor(algorithm='auto', leaf_size=30, metric='minkowski',
+                    metric_params=None, n_jobs=-1, n_neighbors=10, p=2,
+                    weights='uniform')",14,normalize,,0,False
+0.538,47.994,511.781,7.404,"SGDRegressor(alpha=0.0001, average=False, early_stopping=False, epsilon=0.1,
+             eta0=0.01, fit_intercept=True, l1_ratio=0.15,
+             learning_rate='invscaling', loss='huber', max_iter=10000,
+             n_iter_no_change=5, penalty='l2', power_t=0.25,
+             random_state=27033074, shuffle=True, tol=0.001,
+             validation_fraction=0.1, verbose=0, warm_start=False)",14,"RobustScaler(copy=True, quantile_range=(25.0, 75.0), with_centering=True,
+             with_scaling=True)",,0,False
+0.581,59.403,487.174,15.715,"SGDRegressor(alpha=0.0001, average=False, early_stopping=False, epsilon=0.1,
+             eta0=0.01, fit_intercept=True, l1_ratio=0.15,
+             learning_rate='invscaling', loss='squared_loss', max_iter=10000,
+             n_iter_no_change=5, penalty='l2', power_t=0.25,
+             random_state=27033074, shuffle=True, tol=0.001,
+             validation_fraction=0.1, verbose=0, warm_start=False)",14,"MinMaxScaler(copy=True, feature_range=(0, 1))",,0,False
+0.519,49.967,522.336,8.419,"SGDRegressor(alpha=0.0001, average=False, early_stopping=False, epsilon=0.1,
+             eta0=0.01, fit_intercept=True, l1_ratio=0.15,
+             learning_rate='invscaling', loss='epsilon_insensitive',
+             max_iter=10000, n_iter_no_change=5, penalty='l2', power_t=0.25,
+             random_state=27033074, shuffle=True, tol=0.001,
+             validation_fraction=0.1, verbose=0, warm_start=False)",14,"StandardScaler(copy=True, with_mean=True, with_std=True)",,0,False
+0.615,105.514,467.288,40.545,"SGDRegressor(alpha=0.0001, average=False, early_stopping=False, epsilon=0.1,
+             eta0=0.01, fit_intercept=True, l1_ratio=0.15,
+             learning_rate='invscaling', loss='squared_epsilon_insensitive',
+             max_iter=10000, n_iter_no_change=5, penalty='l2', power_t=0.25,
+             random_state=27033074, shuffle=True, tol=0.001,
+             validation_fraction=0.1, verbose=0, warm_start=False)",14,normalize,,0,False
+0.656,54.562,441.34,10.0,"DecisionTreeRegressor(ccp_alpha=0.0, criterion='mse', max_depth=None,
+                      max_features=None, max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, presort='deprecated',
+                      random_state=27033074, splitter='best')",14,"MinMaxScaler(copy=True, feature_range=(0, 1))",,0,False
+0.552,124.45,504.128,26.95,"RidgeCV(alphas=array([ 0.1,  1. , 10. ]), cv=None, fit_intercept=True,
+        gcv_mode=None, normalize=False, scoring=None, store_cv_values=False)",14,normalize,,0,False

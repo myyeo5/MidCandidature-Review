@@ -1,0 +1,12 @@
+R-square,MAE,RSME,MedAE,Model,Num_Features,Preprocessing,Fea_Selection,Dim_Reduction,Var_Threshold
+0.875,38.261,197.186,7.586,"RandomForestRegressor(n_estimators=500, n_jobs=-1, random_state=27033074)",50,QuantileTransformer(random_state=27033074),kb,0,TRUE
+0.828,49.744,230.8,14.468,"MLPRegressor(max_iter=10000, random_state=27033074)",50,"QuantileTransformer(output_distribution='normal', random_state=27033074)",rf,0,TRUE
+0.046,77.282,543.942,9.107,SVR(gamma='auto'),50,StandardScaler(),kb,0,TRUE
+0.717,66.315,296.361,17.6,"KNeighborsRegressor(n_jobs=-1, n_neighbors=10)",50,normalize,rf,0,FALSE
+0.772,43.203,266.035,7.624,"SGDRegressor(loss='huber', max_iter=10000, random_state=27033074)",100,RobustScaler(),rf,0,TRUE
+0.805,59.357,246.073,21.699,"SGDRegressor(max_iter=10000, random_state=27033074)",100,MinMaxScaler(),,1,TRUE
+0.769,43.245,267.468,8.291,"SGDRegressor(loss='epsilon_insensitive', max_iter=10000, random_state=27033074)",100,StandardScaler(),rf,0,FALSE
+0.776,77.087,263.785,32.373,"SGDRegressor(loss='squared_epsilon_insensitive', max_iter=10000,
+             random_state=27033074)",200,normalize,rf,0,FALSE
+0.755,51.453,275.781,10,DecisionTreeRegressor(random_state=27033074),50,MinMaxScaler(),kb,0,FALSE
+0.632,103.725,337.94,40.501,"RidgeCV(alphas=array([ 0.1,  1. , 10. ]))",100,normalize,,1,FALSE

@@ -1,0 +1,11 @@
+Accuracy,F1-Score,Precision,Recall,Model,Num_Features,Preprocessing,Fea_Selection,Dim_Reduction,Var_Threshold
+0.86,0.854,0.885,0.824,"RandomForestClassifier(n_estimators=500, n_jobs=-1, random_state=27033074)",50,PowerTransformer(),rf,0,False
+0.849,0.84,0.884,0.8,"MLPClassifier(max_iter=10000, random_state=27033074)",50,MaxAbsScaler(),rf,0,True
+0.858,0.852,0.88,0.825,"SVC(gamma='auto', random_state=27033074)",50,PowerTransformer(),rf,0,True
+0.827,0.813,0.875,0.758,"KNeighborsClassifier(n_jobs=-1, n_neighbors=10)",50,PowerTransformer(),kb,0,True
+0.843,0.831,0.893,0.777,"SGDClassifier(loss='huber', n_jobs=-1, random_state=27033074)",400,QuantileTransformer(random_state=27033074),rf,0,False
+0.85,0.847,0.853,0.841,"SGDClassifier(loss='log', n_jobs=-1, random_state=27033074)",50,PowerTransformer(),kb,0,False
+0.833,0.826,0.852,0.802,"SGDClassifier(loss='perceptron', n_jobs=-1, random_state=27033074)",478,PowerTransformer(),,0,True
+0.849,0.85,0.838,0.862,"SGDClassifier(n_jobs=-1, random_state=27033074)",200,QuantileTransformer(random_state=27033074),kb,0,True
+0.794,0.791,0.796,0.785,DecisionTreeClassifier(random_state=27033074),400,MaxAbsScaler(),kb,0,False
+0.852,0.847,0.869,0.827,"RidgeClassifierCV(alphas=array([ 0.1,  1. , 10. ]))",200,QuantileTransformer(random_state=27033074),rf,0,True
